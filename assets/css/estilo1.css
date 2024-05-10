@@ -37,3 +37,11 @@ h1,p{
     color: black;
     width: 30%;
 }
+
+.modooscuro{
+    background-color: black;
+}
+
+/*remover el backgroun color purple y agregar black
+
+toggle = si está, lo quita.

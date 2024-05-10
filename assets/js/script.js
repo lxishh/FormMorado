@@ -1,3 +1,26 @@
+window.addEventListener("load",()=>{
+    document.getElementById("btnContraste").addEventListener("click",cambiarContraste);
+    document.getElementById("btnValidar").addEventListener("click",validar);
+    document.getElementById("parrafo").addEventListener("dblclick", ()=>{
+        (alert("hola"))
+    })
+});
+
+
+//no se recomienda poner una función flecha dentro de otra; es mejor llamar a una función.
+
+//función flecha.
+
+//funciones anonimas() crear una función sin darle nombre a la función.
+
+//el load hace que se ejecture una vez que la página se haya cargado.
+
+//Recupera elemento y está a la espera de escuchar un even-to (click); en caso de que hagan click llama a la función cambiar contraste.
+
+//para que funcione, debe estar debajo de la etiqueta a la que estamos aplicando (no se recomienda).
+
+
+
 function validar(){
     validarVacio('nombre');
     validarVacio('email');

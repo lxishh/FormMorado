@@ -9,13 +9,13 @@
 </head>
 <body>
     <div>
-        <button class="btn" onclick="cambiarContraste()">Contraste</button>
-        <button class="btn">Fuente</button>
+        <button class="btn" id="btnContraste">Contraste</button>
+        <button class="btn" id="btnFuente">Fuente</button>
     </div>
     <form>
         <h1 class="titulo">Hola</h1>
         <h1 class="titulo">Bienvenido</h1>
-        <p class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus dolor atque mollitia tenetur inventore exercitationem modi maiores ullam, voluptatum sint recusandae? Saepe, reiciendis consequuntur nostrum iusto sed ullam veritatis.</p>
+        <p class="titulo" id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus dolor atque mollitia tenetur inventore exercitationem modi maiores ullam, voluptatum sint recusandae? Saepe, reiciendis consequuntur nostrum iusto sed ullam veritatis.</p>
         <label>Nombre<span>*</span></label>
         <input type="text" id="nombre" name="nombre" placeholder="ingresa algo" />
         <p class="noDisplay" id="pnombre">Debes ingresar un nombre</p>
@@ -33,7 +33,7 @@
         <label>Mensaje<span>*</span></label>
         <textarea id="mensaje"></textarea>
         <p class="noDisplay" id="pmensaje">Debes ingresar un mensaje</p>
-        <button onclick="validar()" type="button">Enviar</button>
+        <button id="btnValidar" type="button">Enviar</button>
     </form>
     
 </body>
