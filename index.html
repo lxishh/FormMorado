@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/estilo1.css"/>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div>
+        <button class="btn" onclick="cambiarContraste()">Contraste</button>
+        <button class="btn">Fuente</button>
+    </div>
+    <form>
+        <h1 class="titulo">Hola</h1>
+        <h1 class="titulo">Bienvenido</h1>
+        <p class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus dolor atque mollitia tenetur inventore exercitationem modi maiores ullam, voluptatum sint recusandae? Saepe, reiciendis consequuntur nostrum iusto sed ullam veritatis.</p>
+        <label>Nombre<span>*</span></label>
+        <input type="text" id="nombre" name="nombre" placeholder="ingresa algo" />
+        <p class="noDisplay" id="pnombre">Debes ingresar un nombre</p>
+        <label>Email<span class="titulo">*</span></label>
+        <input type="email" id="email" name="email"/>
+        <p class="noDisplay" id="pemail">Debes ingresar un email</p>
+        <label>Telefono</label>
+        <input type="tel" id="telefono" name="telefono"/>
+        <p class="noDisplay" id="ptelefono">Debes ingresar 9 numeros</p>
+        <label>Sitio Web</label>
+        <input type="url" id="sitio" name="sitio"/>
+        <label>Asunto<span>*</span></label>
+        <input type="text" id="asunto" name="asunto"/>
+        <p class="noDisplay" id="pasunto">Debes ingresar un asunto</p>
+        <label>Mensaje<span>*</span></label>
+        <textarea id="mensaje"></textarea>
+        <p class="noDisplay" id="pmensaje">Debes ingresar un mensaje</p>
+        <button onclick="validar()" type="button">Enviar</button>
+    </form>
+    
+</body>
+</html>

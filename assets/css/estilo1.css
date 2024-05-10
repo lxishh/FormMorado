@@ -1,0 +1,39 @@
+body{
+    background-color: purple;
+}
+form{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+}
+span{
+    color: purple;
+}
+input[type='text'],textarea,input[type='tel'],input[type='url'],input[type='email']{
+    border: purple 1px solid;
+}
+input,label,textarea,button{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+button{
+    color: white;
+    background-color: purple;
+    border-radius: 2px;
+}
+p.noDisplay{
+    display: none;
+    color: red;
+}
+h1,p{
+    color: purple;
+    text-align: center;
+}
+.btn{
+    background-color: white;
+    color: black;
+    width: 30%;
+}
