@@ -1,4 +1,4 @@
-body{
+#idBody{
     background-color: purple;
 }
 form{
@@ -40,6 +40,7 @@ h1,p{
 
 .modooscuro{
     background-color: black;
+    color:red
 }
 
 /*remover el backgroun color purple y agregar black

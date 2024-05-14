@@ -6,6 +6,12 @@ window.addEventListener("load",()=>{
     })
 });
 
+function oscuro(){
+    var cuerpo = document.getElementById("idBody");
+    cuerpo.classList.toggle("modooscuro")
+}
+
+
 
 //no se recomienda poner una función flecha dentro de otra; es mejor llamar a una función.
 
