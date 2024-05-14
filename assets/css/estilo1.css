@@ -4,12 +4,15 @@ form{
     margin: auto;
     background-color: white;
 }
+
 span{
     color: purple;
 }
+
 input[type='text'],textarea,input[type='tel'],input[type='url'],input[type='email']{
     border: purple 1px solid;
 }
+
 input,label,textarea,button{
     display: block;
     width: 90%;
@@ -17,19 +20,30 @@ input,label,textarea,button{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-button{
+
+.button-enviar{
     color: white;
     background-color: purple;
     border-radius: 2px;
 }
+
+.button-black{
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+}
+
+
 p.noDisplay{
     display: none;
     color: red;
 }
-h1,p{
+
+/* h1,p{
     color: purple;
     text-align: center;
-}
+} */
+
 .btn{
     background-color: white;
     color: black;
@@ -45,6 +59,29 @@ h1,p{
     background-color: purple;
     color:black
 }
-/*remover el backgroun color purple y agregar black
 
-toggle = si está, lo quita.
+.titulo-default{
+    color: purple;
+    text-align: center;
+}
+
+.titulo-black{
+    color: black;
+    text-align: center;
+}
+
+.pdefault{
+    color:purple
+}
+
+.pnegro{
+    color:black
+}
+
+/* remover el background color purple y agregar black
+
+toggle = si está, lo quita. */
+
+body.fontsize{
+    font-size: 25px;
+}

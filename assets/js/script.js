@@ -1,6 +1,7 @@
 window.addEventListener("load",()=>{
     document.getElementById("btnContraste").addEventListener("click",oscuro);
     document.getElementById("btnValidar").addEventListener("click",validar);
+    document.getElementById("btnFuente").addEventListener("click",fontsize);
     document.getElementById("parrafo").addEventListener("dblclick", ()=>{
         (alert("hola"))
     })
@@ -8,12 +9,24 @@ window.addEventListener("load",()=>{
 
 function oscuro(){
     var cuerpo = document.getElementById("idBody");
-    cuerpo.classList.toggle("idBody")
-    cuerpo.classList.toggle("modooscuro")
-    
+    cuerpo.classList.toggle("idBody");
+    cuerpo.classList.toggle("modooscuro");
+    var parrafito = document.getElementById("parrafo");
+    parrafito.classList.toggle("pdefault");
+    var tituloo = document.getElementsByClassName("titulo-default");
+    for(var i = 0; i < tituloo.length; i++)
+    {
+        tituloo[i].classList.toggle("titulo-black");
+        console.log(tituloo[i].className);
+    }
+    var boton = document.getElementById("btnValidar")
+    boton.classList.toggle("button-black")
+
 }
 
-
+function fontsize(){
+    document.body.classList.toggle("fontsize")
+}
 
 //no se recomienda poner una función flecha dentro de otra; es mejor llamar a una función.
 
@@ -52,6 +65,7 @@ function validarVacio(idCampo){
         pNombre.style.display = "none";
     }
 }
+
 function validarLongitud(campo,largo){
     let elemento = document.getElementById(campo);
     let valor = elemento.value;
