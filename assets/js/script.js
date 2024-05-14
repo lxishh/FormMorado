@@ -1,5 +1,5 @@
 window.addEventListener("load",()=>{
-    document.getElementById("btnContraste").addEventListener("click",cambiarContraste);
+    document.getElementById("btnContraste").addEventListener("click",oscuro);
     document.getElementById("btnValidar").addEventListener("click",validar);
     document.getElementById("parrafo").addEventListener("dblclick", ()=>{
         (alert("hola"))
@@ -8,7 +8,9 @@ window.addEventListener("load",()=>{
 
 function oscuro(){
     var cuerpo = document.getElementById("idBody");
+    cuerpo.classList.toggle("idBody")
     cuerpo.classList.toggle("modooscuro")
+    
 }
 
 
@@ -64,36 +66,37 @@ function validarLongitud(campo,largo){
     }
 
 }
-function cambiarContraste(){
-    let eBody = document.body;
-    let eTextos = document.getElementsByClassName("titulo");
-    let eInputs = document.getElementsByTagName("input");
-    console.log(eInputs);
-    let fondo = eBody.style.backgroundColor;
-    if(fondo=="black"){
-        eBody.style.backgroundColor = "purple";
-        for (let index = 0; index < eTextos.length; index++) {
-            const element = eTextos[index];
-            element.style.color = "purple";
-        }
-        for (let index = 0; index < eInputs.length; index++) {
-            const element = eInputs[index];
-            element.style.borderColor = "purple";
-        }
-       // eH1.style.color = "purple";
-    }else{
-        eBody.style.backgroundColor = "black";
-        //eH1.style.color = "black";
-        for (let index = 0; index < eTextos.length; index++) {
-            const element = eTextos[index];
-            element.style.color = "black";
-        }
+
+// function cambiarContraste(){
+//     let eBody = document.body;
+//     let eTextos = document.getElementsByClassName("titulo");
+//     let eInputs = document.getElementsByTagName("input");
+//     console.log(eInputs);
+//     let fondo = eBody.style.backgroundColor;
+//     if(fondo=="black"){
+//         eBody.style.backgroundColor = "purple";
+//         for (let index = 0; index < eTextos.length; index++) {
+//             const element = eTextos[index];
+//             element.style.color = "purple";
+//         }
+//         for (let index = 0; index < eInputs.length; index++) {
+//             const element = eInputs[index];
+//             element.style.borderColor = "purple";
+//         }
+//        // eH1.style.color = "purple";
+//     }else{
+//         eBody.style.backgroundColor = "black";
+//         //eH1.style.color = "black";
+//         for (let index = 0; index < eTextos.length; index++) {
+//             const element = eTextos[index];
+//             element.style.color = "black";
+//         }
 
         
-        for (let index = 0; index < eInputs.length; index++) {
-            const element = eInputs[index];
-            element.style.borderColor = "black";
-        }
-    }
+//         for (let index = 0; index < eInputs.length; index++) {
+//             const element = eInputs[index];
+//             element.style.borderColor = "black";
+//         }
+//     }
    
-}
+// }

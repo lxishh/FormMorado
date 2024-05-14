@@ -1,6 +1,4 @@
-#idBody{
-    background-color: purple;
-}
+
 form{
     width: 50%;
     margin: auto;
@@ -40,9 +38,13 @@ h1,p{
 
 .modooscuro{
     background-color: black;
-    color:red
+    color:black
 }
 
+.idBody{
+    background-color: purple;
+    color:black
+}
 /*remover el backgroun color purple y agregar black
 
 toggle = si está, lo quita.
